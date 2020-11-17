@@ -68,10 +68,6 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file
-.env
-.env.test
-
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 
@@ -132,6 +128,7 @@ config/master.key
 # TODO Comment out these rules if environment variables can be committed
 .env
 .env.*
+!.env.example
 
 ## Environment normalization:
 /.bundle

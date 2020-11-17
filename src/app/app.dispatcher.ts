@@ -6,10 +6,9 @@ import {
 import { NestFactory } from '@nestjs/core';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { useContainer } from 'class-validator';
-import * as compression from 'compression';
-import * as cors from 'cors';
-// import { EventEmitter } from 'events';
-import * as helmet from 'helmet';
+import compression from 'compression';
+import cors from 'cors';
+import helmet from 'helmet';
 
 import { AppModule } from '../app.module';
 import { config } from '../config';
@@ -57,15 +56,9 @@ export class AppDispatcher {
 			.setVersion(config.version)
 			.addBearerAuth()
 			.build();
-		// const emitter = new EventEmitter();
-		// emitter.setMaxListeners(25);
 
 		const document = SwaggerModule.createDocument(this.app, options);
-		// document.paths['/graphql'] = {
-		// 	get: { tags: ['graphql'] },
-		// 	post: { tags: ['graphql'] },
-		// };
-		SwaggerModule.setup('/swagger', this.app, document);
+		SwaggerModule.setup('/docs', this.app, document);
 	}
 
 	private createMicroservices(): void {
@@ -79,7 +72,7 @@ export class AppDispatcher {
 	private async startServer(): Promise<void> {
 		await this.app.listen(config.port, config.host);
 		this.logger.log(
-			`😎 Swagger is exposed at http://${config.host}:${config.port}/swagger 😎`,
+			`😎 Swagger is exposed at http://${config.host}:${config.port}/docs 😎`,
 		);
 		this.logger.log(
 			`😎 Server is listening http://${config.host}:${config.port} 😎`,
