@@ -6,6 +6,23 @@
   "repository": "https://github.com/mashafrancis/guacamole-api.git",
   "author": "Francis Masha <francismasha96@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "nodemon --exec ts-node src/index.ts",
+    "start:dev": "node -r ts-node/register -r dotenv-safe/config src/index.ts",
+    "cli": "node -r dotenv-safe/config -r ts-node/register src/cli.ts",
+    "start:prod": "node dist/main",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "test:unit": "jest -u --runInBand",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
+    "typeorm:migrations": "typeorm migration:generate -n Migration"
+  },
   "dependencies": {
     "argon2": "^0.27.0",
     "async-exit-hook": "^2.0.1",
