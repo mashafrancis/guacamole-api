@@ -2,8 +2,10 @@
 
 ## guacamole-api
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/0bf9c930aba3128bd6ae/maintainability)](https://codeclimate.com/github/almond-hydroponics/almond-be/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/0bf9c930aba3128bd6ae/test_coverage)](https://codeclimate.com/github/almond-hydroponics/almond-be/test_coverage)
+![CI](https://github.com/mashafrancis/guacamole-api/workflows/CI/badge.svg)
+[![CircleCI](https://circleci.com/gh/mashafrancis/guacamole-api.svg?style=svg)](https://circleci.com/gh/mashafrancis/guacamole-api)
+[![Maintainability](https://api.codeclimate.com/v1/badges/e12575ea3620ac5062a5/maintainability)](https://codeclimate.com/github/mashafrancis/guacamole-api/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/e12575ea3620ac5062a5/test_coverage)](https://codeclimate.com/github/mashafrancis/guacamole-api/test_coverage)
 <img src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
 
 </div>

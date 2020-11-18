@@ -928,6 +928,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/cookiejar@npm:*":
+  version: 2.1.2
+  resolution: "@types/cookiejar@npm:2.1.2"
+  checksum: 4bb5d0d07e5df5866b96d20592d25075ef47a699ec6d8ac87b0f6ebec4bb30aa548b51fbbc908580ea2274e7ef0c55e25d564399751dfef70e811d04b7958280
+  languageName: node
+  linkType: hard
+
 "@types/cookies@npm:*":
   version: 0.7.5
   resolution: "@types/cookies@npm:0.7.5"
@@ -1306,6 +1313,25 @@ __metadata:
   version: 2.0.0
   resolution: "@types/stack-utils@npm:2.0.0"
   checksum: 662312302e07685c99a1c45c6753eb997b31d2af66e646c5937f62d593a63a111289503d0b06a8d1e6f3922b67fc2ed94889d84653a08861a7fee67b81ce5b92
+  languageName: node
+  linkType: hard
+
+"@types/superagent@npm:*":
+  version: 4.1.10
+  resolution: "@types/superagent@npm:4.1.10"
+  dependencies:
+    "@types/cookiejar": "*"
+    "@types/node": "*"
+  checksum: 6ef5ebd6e0194ba6197d6ebe96516db751142d8c0c2805c818d02727cef094e2272fab6a9557aed87ef7840984f5c2abdf9af8a7b375417e535d1e3616a31453
+  languageName: node
+  linkType: hard
+
+"@types/supertest@npm:^2.0.10":
+  version: 2.0.10
+  resolution: "@types/supertest@npm:2.0.10"
+  dependencies:
+    "@types/superagent": "*"
+  checksum: 9ceae7e74305bdd892f57922bfa5355dc50f44f3e2243e159609fa0e275e4a3fea55c2c2d637f37bd8193143cdbab50449e5be36380afe29899ad7aecffb7685
   languageName: node
   linkType: hard
 
@@ -4371,6 +4397,7 @@ __metadata:
     "@types/passport-http-bearer": ^1
     "@types/prettier": ^2
     "@types/rimraf": ^3
+    "@types/supertest": ^2.0.10
     "@types/swagger-ui-express": ^4
     "@types/uuid": ^8
     "@typescript-eslint/eslint-plugin": ^4.8.1

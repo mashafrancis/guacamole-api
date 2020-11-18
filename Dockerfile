@@ -17,6 +17,9 @@ RUN apk add --no-cache --virtual .build-deps1 g++ gcc libgcc libstdc++ linux-hea
     apk add --no-cache --virtual .npm-deps cairo-dev jpeg-dev libjpeg-turbo-dev pango pango-dev && \
     apk add bash
 
+RUN echo 'http://dl-cdn.alpinelinux.org/alpine/v3.9/main' >> /etc/apk/repositories
+RUN echo 'http://dl-cdn.alpinelinux.org/alpine/v3.9/community' >> /etc/apk/repositories
+
 RUN apk update
 RUN apk add mongodb
 RUN apk add mongodb-tools
