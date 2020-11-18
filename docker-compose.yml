@@ -1,0 +1,50 @@
+version: '3'
+
+services:
+  server:
+    container_name: server
+    image: server
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .env
+    volumes:
+      - .:/home/app
+      - node_modules:/home/app/node_modules
+    environment:
+      - MONGO_HOSTNAME=db
+    ports:
+      - '5000:5000'
+    depends_on:
+      - mongo
+    networks:
+      - app-network
+    stdin_open: true
+    tty: true
+
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    restart: always
+    env_file: .env
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=${DB_USER}
+      - MONGO_INITDB_ROOT_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - dbdata:/data/db
+    networks:
+      - app-network
+    ports:
+      - '27018:27017'
+    expose:
+      - 27017
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  dbdata:
+    external: true
+  node_modules:
