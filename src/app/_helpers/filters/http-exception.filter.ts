@@ -27,7 +27,7 @@ export class HttpExceptionFilter implements ExceptionFilter {
 		}
 
 		if (typeof exception.message === 'string') {
-			// tslint:disable-next-line:no-parameter-reassignment
+			// eslint:disable-next-line:no-parameter-reassignment
 			exception = new HttpException(
 				{ error: 'Undefined', message: exception.message },
 				status,

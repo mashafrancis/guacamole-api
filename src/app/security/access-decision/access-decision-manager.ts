@@ -59,7 +59,7 @@ export class AccessDecisionManager implements AccessDecisionManagerInterface {
 	private async decideConsensus(
 		token: any,
 		attributes: any[],
-		object = null,
+		object: null,
 	): Promise<boolean> {
 		let grant = 0;
 		let deny = 0;
@@ -91,7 +91,7 @@ export class AccessDecisionManager implements AccessDecisionManagerInterface {
 	private async decideUnanimous(
 		token: any,
 		attributes: any,
-		object = null,
+		object: null,
 	): Promise<boolean> {
 		let grant = 0;
 		for (const voter of this.voters) {

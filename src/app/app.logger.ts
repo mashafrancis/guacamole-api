@@ -40,6 +40,7 @@ export class AppLogger implements LoggerService {
 								format.cli(),
 								format.splat(),
 							),
+							// eslint-disable-next-line no-mixed-spaces-and-tabs
 					  }),
 			],
 		});

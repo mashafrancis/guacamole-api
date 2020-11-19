@@ -18,7 +18,7 @@ export class AuthorizationChecker implements AuthorizationCheckerInterface {
 			AccessDecisionStrategyEnum.STRATEGY_AFFIRMATIVE,
 			true,
 		);
-		this.tokenStorage = function() {
+		this.tokenStorage = function () {
 			return {
 				getUser: () => RequestContext.currentUser(),
 			};
@@ -27,7 +27,7 @@ export class AuthorizationChecker implements AuthorizationCheckerInterface {
 
 	public async isGranted(
 		attributes: string[] | RestVoterActionEnum,
-		subject = null,
+		subject: null,
 	) {
 		const token = this.tokenStorage();
 

@@ -19,7 +19,7 @@
     "incremental": true,
     "removeComments": true,
     "noImplicitAny": true,
-    "strictNullChecks": true,
+//    "strictNullChecks": true,
     "strictFunctionTypes": true,
     "noImplicitThis": true,
     "noUnusedLocals": true,

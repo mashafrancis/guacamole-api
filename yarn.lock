@@ -1137,6 +1137,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/jsonwebtoken@npm:*, @types/jsonwebtoken@npm:^8":
+  version: 8.5.0
+  resolution: "@types/jsonwebtoken@npm:8.5.0"
+  dependencies:
+    "@types/node": "*"
+  checksum: d1a6b28f826898bc4f5596d91705aa864419c4a5ca49215507260644af8ceff9edb6db1901a108207cfb22558d035655b55309f38b75fa081da01be9f5408b21
+  languageName: node
+  linkType: hard
+
 "@types/keygrip@npm:*":
   version: 1.0.2
   resolution: "@types/keygrip@npm:1.0.2"
@@ -1216,13 +1225,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^12.0.8":
-  version: 12.19.4
-  resolution: "@types/node@npm:12.19.4"
-  checksum: 9942e57f34ed8fa7de5a1b53268db4ecc12a646f6416392e1eeb03531d390e10f88ec2c237acaf90b623486154ebffdf1cec06a65de67eea3d411f85dddae1c7
-  languageName: node
-  linkType: hard
-
 "@types/nodemailer@npm:^6":
   version: 6.4.0
   resolution: "@types/nodemailer@npm:6.4.0"
@@ -1247,6 +1249,27 @@ __metadata:
     "@types/koa": "*"
     "@types/passport": "*"
   checksum: 67fe1359eed4877ed5c69b58a75d59bbc1355dbd9663858e1c8fcc5c6ba5d7983137d06f4ebb93c2defc08e34ffc6d5a82c7523e42cf2e8f2f460341f9d8aea2
+  languageName: node
+  linkType: hard
+
+"@types/passport-jwt@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "@types/passport-jwt@npm:3.0.3"
+  dependencies:
+    "@types/express": "*"
+    "@types/jsonwebtoken": "*"
+    "@types/passport-strategy": "*"
+  checksum: 929b0caa5b071f3ceafb6832316f6706b21eab39148913fa1735ffd3d2a8c21eda61a4e44fe6cbb217d4baad7d2b460e6f6ec16994cbafb7ffb6fb5d757cf6a2
+  languageName: node
+  linkType: hard
+
+"@types/passport-strategy@npm:*":
+  version: 0.2.35
+  resolution: "@types/passport-strategy@npm:0.2.35"
+  dependencies:
+    "@types/express": "*"
+    "@types/passport": "*"
+  checksum: dc1137f9a98af5208f88b703e09ed6e32238ff3432cd245f9cf8027db11e499691d9c05f7bd7735f5899c221ca3807fda72386dbddbfe0eaf2bee65de49f3a89
   languageName: node
   linkType: hard
 
@@ -1798,6 +1821,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"arrify@npm:1.0.1":
+  version: 1.0.1
+  resolution: "arrify@npm:1.0.1"
+  checksum: f1d3bae819f49f51a09da5f5c5ce282e79ca69bbdb32db1d9f6c62b151ef801b74398d007cfe89686e2c5aeb62576a398b9068e5172b7f4e20157aa3284076d3
+  languageName: node
+  linkType: hard
+
 "arrify@npm:^2.0.0, arrify@npm:^2.0.1":
   version: 2.0.1
   resolution: "arrify@npm:2.0.1"
@@ -1964,6 +1994,15 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0
   checksum: 466ca17bba2638cadda5c25f3108dab1867b30e5d728366d0d2309be5d6555db8738a6cacd2c43284bee2ce7917e3285194c223a22b3d9817794f00c2775fdb2
+  languageName: node
+  linkType: hard
+
+"babylon@npm:7.0.0-beta.47":
+  version: 7.0.0-beta.47
+  resolution: "babylon@npm:7.0.0-beta.47"
+  bin:
+    babylon: ./bin/babylon.js
+  checksum: 1118a398403a00db8f56d978d4e5af02b17c997c0dd528cabd048fcc3caf022e0f9d14fa8504729b34352120306b14f7c3ba747167febbf769f0bb4aff48a558
   languageName: node
   linkType: hard
 
@@ -2950,6 +2989,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"define-property@npm:2.0.2, define-property@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "define-property@npm:2.0.2"
+  dependencies:
+    is-descriptor: ^1.0.2
+    isobject: ^3.0.1
+  checksum: 00c7ec53b5040507016736922a9678b3247bc85e0ea0429e47d6ca6a993890f9dc338fb19d5bf6f8c0ca29016a68aa7e7da5c35d4ed8b3646347d86a3b2b4b01
+  languageName: node
+  linkType: hard
+
 "define-property@npm:^0.2.5":
   version: 0.2.5
   resolution: "define-property@npm:0.2.5"
@@ -2965,16 +3014,6 @@ __metadata:
   dependencies:
     is-descriptor: ^1.0.0
   checksum: 9034f8f6f3128945374349262e4f97b53e9582f9e3435bedb284c5210c45a98b355d40a42a570766add34a604d97b6ff0773bfd122f891a289009a1b82cc0eee
-  languageName: node
-  linkType: hard
-
-"define-property@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "define-property@npm:2.0.2"
-  dependencies:
-    is-descriptor: ^1.0.2
-    isobject: ^3.0.1
-  checksum: 00c7ec53b5040507016736922a9678b3247bc85e0ea0429e47d6ca6a993890f9dc338fb19d5bf6f8c0ca29016a68aa7e7da5c35d4ed8b3646347d86a3b2b4b01
   languageName: node
   linkType: hard
 
@@ -4390,11 +4429,13 @@ __metadata:
     "@types/express": ^4
     "@types/faker": ^5
     "@types/helmet": ^4
+    "@types/jsonwebtoken": ^8
     "@types/luxon": ^1
     "@types/mongodb": ^3
     "@types/nodemailer": ^6
     "@types/passport": ^0
     "@types/passport-http-bearer": ^1
+    "@types/passport-jwt": ^3.0.3
     "@types/prettier": ^2
     "@types/rimraf": ^3
     "@types/supertest": ^2.0.10
@@ -4422,6 +4463,7 @@ __metadata:
     googleapis: ^65.0.0
     helmet: ^4.2.0
     jest: ^26.6.3
+    jsonwebtoken: ^8.5.1
     luxon: ^1.25.0
     mongodb: ^3.6.3
     nestjs-command: ^1.5.3
@@ -4445,7 +4487,7 @@ __metadata:
     ts-jest: ^26.4.4
     ts-node: ^9.0.0
     tsconfig-paths: ^3.9.0
-    twing: ^5.0.2
+    twing: ^2.2.3
     typeorm: ^0.2.29
     typescript: ^4.0.5
     uuid: ^8.3.1
@@ -5858,7 +5900,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsonwebtoken@npm:^8.2.0":
+"jsonwebtoken@npm:^8.2.0, jsonwebtoken@npm:^8.5.1":
   version: 8.5.1
   resolution: "jsonwebtoken@npm:8.5.1"
   dependencies:
@@ -6085,7 +6127,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"locutus@npm:^2.0.11":
+"locutus@npm:^2.0.9":
   version: 2.0.14
   resolution: "locutus@npm:2.0.14"
   dependencies:
@@ -6221,7 +6263,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"luxon@npm:^1.19.3, luxon@npm:^1.25.0":
+"luxon@npm:^1.25.0, luxon@npm:^1.4.1":
   version: 1.25.0
   resolution: "luxon@npm:1.25.0"
   checksum: 3f0d64355beab707f5e8eb4e2d7e1cad90569c2a4c4dce440e0b4be4eb6833ec1a83513a4210361cd4dc5a266c0221718a9afd15f7cde3002d8fa1d0976b9e50
@@ -7301,6 +7343,17 @@ __metadata:
   version: 1.0.0
   resolution: "parent-require@npm:1.0.0"
   checksum: 69e60fb6bf40080777a71552bbc558302b24882cbe8cf31ac64eef78f6555084c68689d2516d2a6a587e2b7a6aa3e4d397cd1cd1931683f11e3868a6bdcc6431
+  languageName: node
+  linkType: hard
+
+"parse-function@npm:5.2.x":
+  version: 5.2.11
+  resolution: "parse-function@npm:5.2.11"
+  dependencies:
+    arrify: 1.0.1
+    babylon: 7.0.0-beta.47
+    define-property: 2.0.2
+  checksum: 30b46b3ee6b1be629c41233a673169116a0d27d0ce6c4c78a42cfbfdc69bc3842c278eb0f9d5feab2b17901425aa4e1529829abaa9acdf63d9a8169881902f01
   languageName: node
   linkType: hard
 
@@ -9379,18 +9432,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"twig-lexer@npm:^0.7.2":
-  version: 0.7.2
-  resolution: "twig-lexer@npm:0.7.2"
-  dependencies:
-    "@types/node": ^12.0.8
-  checksum: 1ac47179cf2b0019ee514cc250ba09749968a1bac1ea1a6c37c302227b407367dbbb1e7cefa292a430946ce473bdba5391ab1f3115a9de9c7e03b20640fecf39
-  languageName: node
-  linkType: hard
-
-"twing@npm:^5.0.2":
-  version: 5.0.2
-  resolution: "twing@npm:5.0.2"
+"twing@npm:^2.2.3":
+  version: 2.3.7
+  resolution: "twing@npm:2.3.7"
   dependencies:
     "@types/luxon": ^1.4.0
     camelcase: ^4.1.0
@@ -9405,19 +9449,20 @@ __metadata:
     is-plain-object: ^2.0.4
     isobject: ^3.0.1
     levenshtein: ^1.0.5
-    locutus: ^2.0.11
-    luxon: ^1.19.3
+    locutus: ^2.0.9
+    luxon: ^1.4.1
     merge: ^1.2.1
     object-hash: ^1.2.0
     pad: ^2.0.3
+    parse-function: 5.2.x
     regex-parser: ^2.2.8
     runes: ^0.4.3
     snake-case: ^2.1.0
     source-map: ^0.6.1
     tmp: 0.0.33
-    twig-lexer: ^0.7.2
     utf8-binary-cutter: ^0.9.2
-  checksum: f28f57283bd6943b8965099309b74b6908d7ec78a1ba0323df718a40e196edd4942495abbdfb0ce44eb9a7ef8f773f72d9d42f812ff4c13103fdf4657c3a3ce2
+    var-validator: 0.0.3
+  checksum: d749d7aa8e923b4031369b0872af2ed55709c296793b4d45c12631bf2e0b87617fe86c696760580a9555fefb74b721c40fd555d054d6ef6c10ca8a320da390f4
   languageName: node
   linkType: hard
 
@@ -9740,6 +9785,13 @@ typescript@^4.0.5:
   version: 13.0.0
   resolution: "validator@npm:13.0.0"
   checksum: c537ecd87c245aad5466a3821c9f87909d6ddd695daddc37691863a79b481a7efc0f3d3e88d0bf001d8d9c64fb4151c4e7a92fe060899c86d8ad9c334dceac2d
+  languageName: node
+  linkType: hard
+
+"var-validator@npm:0.0.3":
+  version: 0.0.3
+  resolution: "var-validator@npm:0.0.3"
+  checksum: 99fffc8d7122baa423c01d0a054d88d3b4a06a3046ec32a97fea4cd493021909579328ade0dff559bb4470edb099e02692417f7d3cce9dd1f9f69e221518e047
   languageName: node
   linkType: hard
 

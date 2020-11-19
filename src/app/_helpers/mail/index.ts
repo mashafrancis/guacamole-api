@@ -23,7 +23,7 @@ export async function mail(options: SendMailOptions): Promise<SentMessageInfo> {
 		auth: {
 			accessToken,
 			type: 'OAuth2',
-			user: 'butternut.froyo@gmail.com',
+			user: 'almond.froyo@gmail.com',
 			clientId: config.google.mailClientId,
 			clientSecret: config.google.mailClientSecret,
 			refreshToken: config.google.mailRefreshToken,
@@ -33,8 +33,8 @@ export async function mail(options: SendMailOptions): Promise<SentMessageInfo> {
 	return transporter.sendMail({ ...options, from: config.mail.from });
 }
 
-export async function renderTemplate(path: string, data: any): Promise<string> {
+export function renderTemplate(path: string, data: any): string {
 	const loader = new TwingLoaderFilesystem(config.assetsPath);
 	const twing = new TwingEnvironment(loader);
-	return await twing.render(path, data);
+	return twing.render(path, data);
 }

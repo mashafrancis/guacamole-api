@@ -17,7 +17,7 @@ dispatcher
 	});
 
 exitHook(() => {
-  dispatcher.shutdown().then(() => {
-    logger.log('Gracefully shutting down the server');
-  });
+	dispatcher.shutdown().then(() => {
+		logger.log('Gracefully shutting down the server');
+	});
 });

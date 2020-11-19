@@ -6,7 +6,6 @@ const arrayToObject = (arr: any[]) =>
 export const typeormFilterMapper = (options: FindManyOptions) => {
 	const filters = options.where;
 	const where = {};
-	// @ts-expect-error cannot change default
 	Object.keys(filters).forEach((filterName) => {
 		// @ts-expect-error cannot change default
 		const operators = filters[filterName];
