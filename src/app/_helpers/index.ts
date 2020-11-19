@@ -5,8 +5,8 @@ export * from './entity';
 export * from './filters';
 export * from './database';
 export * from './rest.exception';
-// export * from './request-context';
-// export * from './middleware/request-context.middleware';
+export * from './request-context';
+export * from './middleware/request-context.middleware';
 
 export const ucfirst = (string: string | string[]) =>
 	string[0].toUpperCase() + string.slice(1);

@@ -35,6 +35,7 @@
     "baseUrl": "./",
     "rootDir": "src"
   },
+  "files": ["./src/types/supertest/index.d.ts", "./test/app.e2e-spec.ts"],
   "exclude": [
     "node_modules",
     "dist",

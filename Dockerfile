@@ -28,14 +28,17 @@ RUN npm config set unsafe-perm true
 RUN npm install yarn@1.22.x
 RUN rm -rf package-lock.json
 
-COPY yarn.lock $APP_HOME
 COPY package.json $APP_HOME
 
-RUN yarn set version berry
-RUN echo 'nodeLinker: node-modules' >> .yarnrc.yml
+RUN rm -rf yarn.lock
+RUN yarn set version berry && yarn set version latest
+RUN yarn config set nodeLinker "node-modules"
+RUN yarn plugin import typescript
+RUN yarn plugin import exec
+RUN touch yarn.lock
 RUN yarn install
 
 ENV PATH="./node_modules/.bin:$PATH"
 ADD . $APP_HOME
 
-CMD ["yarn", "start"]
+#CMD ["yarn", "start"]

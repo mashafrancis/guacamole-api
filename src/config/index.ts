@@ -88,7 +88,7 @@ export const config: Config = {
 		entities: [`${__dirname}/../**/entity/*.entity{.ts,.js}`],
 	},
 	version: appData.version,
-	name: 'Butternut',
+	name: 'Mobilities',
 	description: appData.description,
 	validator: {
 		validationError: {

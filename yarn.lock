@@ -4439,6 +4439,7 @@ __metadata:
     rimraf: ^3.0.2
     rxjs: ^6.6.3
     rxjs-compat: ^6.6.3
+    superagent: ^6.1.0
     supertest: ^6.0.1
     swagger-ui-express: ^4.1.4
     ts-jest: ^26.4.4
@@ -8959,7 +8960,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"superagent@npm:6.1.0":
+"superagent@npm:6.1.0, superagent@npm:^6.1.0":
   version: 6.1.0
   resolution: "superagent@npm:6.1.0"
   dependencies:
