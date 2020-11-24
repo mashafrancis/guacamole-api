@@ -23,10 +23,13 @@ export async function mail(options: SendMailOptions): Promise<SentMessageInfo> {
 		auth: {
 			accessToken,
 			type: 'OAuth2',
-			user: 'almond.froyo@gmail.com',
+			user: 'kari4me.froyo@gmail.com',
 			clientId: config.google.mailClientId,
 			clientSecret: config.google.mailClientSecret,
 			refreshToken: config.google.mailRefreshToken,
+		},
+		tls: {
+			rejectUnauthorized: false,
 		},
 	} as any);
 

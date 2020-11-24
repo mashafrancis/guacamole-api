@@ -76,11 +76,9 @@ export class UserController {
 				config.session.verify_account.timeout,
 				config.session.verify_account.secret,
 			);
-			// tslint:disable-next-line:no-parameter-reassignment
 			user = await this.userService.patch(user.id.toString(), {
 				activationCode: token,
 			});
-			this.logger.debug(token);
 			await mail({
 				subject: `Verify your account`,
 				to: userRecord.email,

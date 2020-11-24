@@ -49,7 +49,6 @@ export class AuthController {
 	): Promise<UserEntity> {
 		const user = await this.userService.create(data);
 		this.logger.debug(`[register] User ${data.email} registered`);
-		// tslint:disable-next-line:no-empty
 		this.client.send({ cmd: USER_CMD_REGISTER }, user).subscribe(
 			() =>
 				this.logger.debug(
