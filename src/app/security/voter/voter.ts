@@ -35,7 +35,7 @@ export abstract class Voter implements VoterInterface, OnModuleInit {
 
 	protected abstract supports(attribute: any, subject: any): boolean;
 
-	protected abstract async voteOnAttribute(
+	protected abstract voteOnAttribute(
 		attribute: any,
 		subject: any,
 		token: any,

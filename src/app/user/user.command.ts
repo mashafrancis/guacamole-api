@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { plainToClass } from 'class-transformer';
-import * as faker from 'faker';
+import faker from 'faker';
 import { DateTime } from 'luxon';
 import { Command, Positional } from 'nestjs-command';
 import { AppLogger } from '../app.logger';
@@ -12,8 +12,6 @@ export class UserCommand {
 	private logger = new AppLogger(UserCommand.name);
 
 	constructor(private readonly userService: UserService) {
-		// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-		// @ts-ignore
 		faker.locale = 'en_US';
 	}
 

@@ -1,0 +1,11 @@
+node_modules
+tests/
+docker/
+.circleci/
+.git/
+.env.example
+.gitignore
+.yarn/
+coverage
+logs
+dist/

@@ -47,6 +47,10 @@ interface Config {
 			timeout: number;
 		};
 	};
+	facebook: {
+		app_id: string;
+		app_secret: string;
+	};
 	microservice: MicroserviceOptions;
 	google: {
 		clientID: string;
@@ -122,6 +126,10 @@ export const config: Config = {
 			secret: process.env.SESSION_VERIFY_SECRET as string,
 			timeout: parseInt(process.env.SESSION_VERIFY_TIMEOUT as string, 10),
 		},
+	},
+	facebook: {
+		app_id: process.env.APP_FACEBOOK_APP_ID,
+		app_secret: process.env.APP_FACEBOOK_APP_SECRET,
 	},
 	microservice: {
 		transport: Transport.TCP,
